@@ -1,0 +1,423 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Piedra:regular);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,500;0,700;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.container {
+  max-width: 1196px;
+  margin: auto;
+}
+
+header {
+  margin-bottom: 28px;
+  margin-top: 48px;
+}
+
+
+.topPartOfHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.topPartOfHeader .logo h2{
+  font-family: 'Piedra';
+  font-weight: 400;
+  font-size: 64px;
+  color: #000;
+}
+
+.topPartOfHeader .shopInfo {
+  width: 172px;
+}
+
+.topPartOfHeader .shopInfo .tel {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+
+.topPartOfHeader .shopInfo .placeAndTime {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  color: #B5B5B5;
+  text-align: center;
+}
+
+.navigator ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 85px;
+  width: 100%;
+  background: #000;
+  border-radius: 10px;
+}
+
+.navigator ul li {
+  list-style: none;
+  border-right: #fff solid 2px; 
+  padding-right: 30px;
+}
+
+.navigator ul .finalLi {
+  padding-right: 0;
+  border-right: none;
+}
+
+.navigator ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+}
+
+
+
+
+.menu-slider .container {
+  width: 1196px;
+  margin: auto;
+  text-align: center;
+  margin-top: 63px;
+  margin-bottom: 140px;
+}  
+
+.menu-slider .slideshow-container {
+  display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 912px;
+}
+
+.menu-slider .mySlides {
+    display: flex;
+    position: relative;
+    transition: all ease 1s;
+    overflow: hidden;
+}
+
+.menu-slider .mySlides img {
+  border-radius: 30px;
+}
+
+.menu-slider .dot {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin: 0 2px;
+  background-color: #681818;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all ease 0.6s ;
+  background: #FFFFFF;
+  }
+  
+  .menu-slider .active, .dot:hover {
+  background-color: #CBCBCB;
+} 
+
+.menu-slider .dots{
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+}
+
+.menu-slider .categories  a{
+  cursor: pointer;
+  padding-top:20px ;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.menu-slider .categories  h3{
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+.menu-slider .categories a:not(:last-child){
+  padding-bottom: 30px;
+  border-bottom: 3px solid #000000;
+}
+
+.menu-slider .categories a{
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-slider .categories{
+  display: inline-block;
+  width: 20%;
+  margin-right: 11px;
+}
+
+.menu-slider menu{
+  display: inline-block;
+}
+
+
+
+.filter {
+  width: 1196px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter .searchBar {
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 31px;
+}
+
+.filter .searchBar input {
+  width: 800px;
+  height: 42px;
+  border-radius: 30px;
+  border: 1px #c1c0c0 solid;
+  padding: 10px 80px 9px 80px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #C1C0C0;
+  outline: none;
+}
+
+.filter .searchBar input::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  color: #C1C0C0;
+}
+
+.filter .searchBar i {
+  position: absolute;
+  top: 12px;
+  left: 42px;
+  cursor: pointer;
+}
+
+.filter .filterPoints {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter .filterPoints button {
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  border-width: 0;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px 58px 9px 35px;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+  transition: .5s;
+}
+
+.filter .filterPoints button::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 2px;
+  border-radius: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 23px;
+  transition: .5s;
+  right: 31px;
+}
+
+.filter .filterPoints button::after {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 2px;
+  border-radius: 10px;
+  background: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 23px;
+  transition: .5s;
+  right: 23px;
+}
+
+.filter .filterPoints button.up::after{
+  transform:rotate(45deg);
+}
+
+.filter .filterPoints button.up::before{
+  transform:rotate(-45deg);
+}
+
+.filter .filterPoints .listPoint {
+  background: #000;
+  border-radius: 20px;
+  height: 0px;
+  transform: translateY(-28px);
+  text-align: center;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.filter .filterPoints .listPoint.active {
+  height: 240px;
+  padding-top: 50px;
+  transform: translateY(-42px);
+}
+
+.filter .filterPoints .price .listPoint.active {
+  height: 210px;
+}
+
+.filter .filterPoints .size .listPoint.active {
+  height: 180px;
+}
+
+.filter .filterPoints .listPoint li {
+  list-style: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 0px;
+  transition: .5s;
+}
+
+.filter .filterPoints .listPoint li:hover, .filter .filterPoints .listPoint li.checked {
+  background: #ffffff;
+  color: #000;
+}
+
+
+.katalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer {
+  padding: 60px 0 109px 0;
+  background: #000;
+  margin-top: 140px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .ourContacts .placeAndNumber i {
+  color: #fff;
+  width: 15px;
+}
+
+footer .ourContacts .placeAndNumber .place {
+  margin-bottom: 13px;
+}
+
+footer .ourContacts .socialNetworks {
+  margin-top: 24px;
+}
+
+footer .ourContacts .socialNetworks i {
+  color: #fff;
+}
+
+footer .ourContacts .socialNetworks a {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+footer h2 {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+footer .links a {
+  color: #fff;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 13px;
+}
+
+footer .links .finalA {
+  margin-bottom: 0px;
+}
+
+footer .info, footer .categories, footer .personalArea, footer .ourContacts {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer .info {
+  max-width: 196px;
+}
+
+footer .categories {
+  max-width: 126px;
+}
+
+footer .personalArea {
+  max-width: 204px;
+}
+
+footer .ourContacts {
+  max-width: 186px;
+}
+
+footer .ourContacts p {
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 11px;
+}
+
+footer .ourContacts .place, footer .ourContacts .number {
+  display: flex;
+}
+.katalog-button{
+text-decoration: none;
+color: white;
+}
