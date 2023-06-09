@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="item.css">
+    <title>Header & Footer</title>
+
+    <script src="item.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="topPartOfHeader">
+            <div class="logo">
+                <h2>SKATEBOARD.BY</h2>
+            </div>
+            <div class="shopInfo">
+                <div class="tel"><p>+375 (29) 999-08-67</p></div>
+                <div class="placeAndTime">г.Минск ТЦ "Galileo" 10.00 - 22.00</div>
+            </div>
+        </div>
+        <div class="navigator">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="404.html">Доставка</a></li>
+                <li><a href="404.html">Отзывы</a></li>
+                <li><a href="404.html">Контакты</a></li>
+                <li><a href="404.html">О нас</a></li>
+                <li><a href="katalog.html">Каталог</a></li>
+                <li class="finalLi"><a href="bucket.html">Корзина</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="item_flex-row">
+            <div class="item__image-radio">
+                <img class="item__image_main" id="imageMain" alt="" src="images/VansOldSchool-1.jpg"/>
+                <form>
+                    <div class="item__image-radio_list" id="radioList">
+                        <label for="image_1"><input checked class="item__image-button" type="radio" id="image_1"
+                                                    name="image_select"
+                                                    value="image_1"/></label>
+                        <label for="image_2"><input class="item__image-button" type="radio" id="image_2"
+                                                    name="image_select"
+                                                    value="image_2"/></label>
+                        <label for="image_3"><input class="item__image-button" type="radio" id="image_3"
+                                                    name="image_select"
+                                                    value="image_3"/></label>
+                        <label for="image_4"><input class="item__image-button" type="radio" id="image_4"
+                                                    name="image_select"
+                                                    value="image_4"/></label>
+                        <label for="image_5"><input class="item__image-button" type="radio" id="image_5"
+                                                    name="image_select"
+                                                    value="image_5"/></label>
+                    </div>
+                </form>
+            </div>
+            <div class="item__price-size-select">
+                <h3 class="item__name">Кеды "Vans Old School"</h3>
+                <button class="item__sizes-table">
+                    <div>
+                        <img src="images/SizesTable.png" alt=""/>
+                        <p>
+                            Таблица размеров
+                        </p>
+                    </div>
+                </button>
+                <div class="item__size-list">
+                    <form>
+                        <div class="item__size-list_row">
+                            <button class="item__size-button" id="size__36">36</button>
+                            <button class="item__size-button" id="size__37">37</button>
+                            <button class="item__size-button" id="size__38">38</button>
+                            <button class="item__size-button" id="size__39">39</button>
+                            <button class="item__size-button" id="size__40">40</button>
+                        </div>
+                        <div class="item__size-list_row">
+                            <button class="item__size-button" id="size__41">41</button>
+                            <button class="item__size-button active" id="size__42">42</button>
+                            <button class="item__size-button" id="size__43">43</button>
+                            <button class="item__size-button" id="size__44">44</button>
+                            <button class="item__size-button" id="size__45">45</button>
+                        </div>
+                    </form>
+                </div>
+                <h4 class="item__color">Цвет: Черный, Белый</h4>
+                <p class="item__price">199.99 Р</p>
+                <div class="item__to-cart-like">
+                    <button class="item__to-cart">В корзину</button>
+                    <button class="item__like">
+                        <img src="images/like.png"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="item__image-select">
+            <div class="item__image-select">
+
+                <div class="item__image-list" id="imageList">
+                    <img class="item__image-list_item active" src="images/VansOldSchool-1.jpg" alt=""/>
+                    <img class="item__image-list_item" src="images/VansOldSchool-2.jpg" alt=""/>
+                    <img class="item__image-list_item" src="images/VansOldSchool-3.jpg" alt=""/>
+                    <img class="item__image-list_item" src="images/VansOldSchool-4.jpg" alt=""/>
+                    <img class="item__image-list_item" src="images/VansOldSchool-5.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="info">
+            <h2>Информация</h2>
+            <div class="links">
+                <a href="404.html">Возврат денежных средств</a>
+                <a href="404.html">Возврат товара</a>
+                <a href="404.html">Где моя посылка?</a>
+                <a href="404.html">О компании</a>
+                <a href="404.html">Доставка</a>
+                <a class="finalA" href="404.html">Оплата</a>
+            </div>
+        </div>
+        <div class="categories">
+            <h2>Категории</h2>
+            <div class="links">
+                <a href="404.html">Аксессуары</a>
+                <a href="404.html">Обувь</a>
+                <a href="404.html">Одежда</a>
+                <a href="404.html">Запчасти</a>
+                <a href="404.html">Украшения</a>
+                <a class="finalA" href="404.html">Стикерпаки</a>
+            </div>
+        </div>
+        <div class="personalArea">
+            <h2>Личный кабинет</h2>
+            <div class="links">
+                <a href="404.html">Личный кабинет</a>
+                <a href="404.html">История заказов</a>
+                <a href="404.html">Мои закладки</a>
+                <a href="404.html">Рассылка новостей</a>
+                <a class="finalA" href="404.html">Связаться с нами</a>
+            </div>
+        </div>
+        <div class="ourContacts">
+            <h2>Наши контакты</h2>
+            <div class="placeAndNumber">
+                <div class="place">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>г.Минск ТЦ "Galileo"</p>
+                </div>
+                <div class="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+375 (29) 999-08-67</p>
+                </div>
+            </div>
+            <div class="socialNetworks">
+                <a href="404.html"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                <a href="404.html"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a href="404.html"><i class="fa-solid fa-camera-retro fa-2xl"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
