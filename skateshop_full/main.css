@@ -308,7 +308,7 @@ button {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 48px;
-    background-image: url(/images/Rectangle\ 59.png);
+    background-image: url(./images/Rectangle\ 59.png);
 }
 
 .box-two {
@@ -316,7 +316,7 @@ button {
     flex-direction: column;
     justify-content: flex-end;
     align-items:center;
-    background-image: url(/images/Rectangle\ 58.png);
+    background-image: url(./images/Rectangle\ 58.png);
     background-repeat: no-repeat;
     height: 508px;
     width: 588px;
@@ -329,7 +329,7 @@ button {
     flex-direction: column;
     justify-content: flex-end;
     align-items:center;
-    background-image: url(/images/Rectangle\ 56.png);
+    background-image: url(./images/Rectangle\ 56.png);
     background-repeat: no-repeat;
     height: 624px;
     width: 1196px;
@@ -352,6 +352,7 @@ button {
     color: #FFFFFF;
     font-size: 36px;
     font-family: 'Roboto', sans-serif;
+    transition: all 300ms ease;
 }
 
 .bottom-up p {
@@ -420,7 +421,6 @@ button {
  
 .bottom button:hover {
 transform: scale(1.1);
-transition: all 300ms ease;
 }
 
 footer {

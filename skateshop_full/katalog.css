@@ -81,9 +81,6 @@ header {
   font-size: 24px;
 }
 
-
-
-
 .menu-slider .container {
   width: 1196px;
   margin: auto;
@@ -187,8 +184,8 @@ header {
 .filter .searchBar {
   width: 100%;
   position: relative;
-  margin-top: 100px;
-  margin-bottom: 31px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .filter .searchBar input {
@@ -276,16 +273,28 @@ header {
   background: #000;
   border-radius: 20px;
   height: 0px;
+  width: 190px;
   transform: translateY(-28px);
   text-align: center;
   transition: .5s;
   overflow: hidden;
+  position: absolute;
+}
+
+.filterPoints > div{
+  position: relative;
+
+}
+.filterPoints button{
+  width: 190px;
 }
 
 .filter .filterPoints .listPoint.active {
   height: 240px;
   padding-top: 50px;
   transform: translateY(-42px);
+  position: absolute;
+  width: 190px;
 }
 
 .filter .filterPoints .price .listPoint.active {
@@ -314,20 +323,54 @@ header {
 
 .katalog {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
+  gap: 105px;
   flex-wrap: wrap;
   margin-top: 100px;
 }
 
+.katalog .tag{
+  margin: 10px 0 ;
+}
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 220px;
 }
+
+.card img {
+  width: 220px;
+}
+
+h2.tag {
+  text-align: center;
+  font-weight: 500;
+}
+
+p.price {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  color: #C1C0C0;
+  text-align: center;
+}
+
+a.buy {
+  color: #FF0000;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  border: 2px solid #FF0000;
+  border-radius: 40px;
+  padding: 9px 57px;
+  margin-top: 12px;
+  display: inline-block;
+}
+
 footer {
   padding: 60px 0 109px 0;
   background: #000;

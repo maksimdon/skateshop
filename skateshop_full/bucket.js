@@ -1,24 +1,25 @@
 let bucketEmpty = document.querySelector('.emptyBuscketMessage');
 let bucketFilled = document.querySelector('.filledBucketMessage');
 let goodsElement = document.querySelector('.goods');
+let price = document.querySelector('.price-all');
+
 let goods = [
     {
         name:"Лонгслив ‘’Nike SB’’", 
         color:"белый",
-        image:"",
+        image:"./images/nike.png",
         size:"XL",
         price: 149.99
     },
     {
         name:"Кеды Converse ‘’Chuck Taylor’’", 
         color:"черный",
-        image:"",
+        image:"./images/ConverseChuckTaylor.jpg",
         size:"42",
         price: 129.99
     }
 ];
 let createGoodInCart = (title, color, image, size, price) =>{
-    console.log(title, color, image, price, size);
     return  `
         <div class="goodContent">
             <div class="goodImg"><img src=${image} alt="good" class="goodImage imageDef"></div>
@@ -36,24 +37,48 @@ let createGoodInCart = (title, color, image, size, price) =>{
         </div>
     `
 };
-console.log(bucketEmpty, bucketFilled, goodsElement, goods);
 goods.forEach(item =>{
     let card = createGoodInCart(item.name, item.color, item.image, item.size, item.price);
-    console.log(card)
     goodsElement.innerHTML += card;
 });
-let minus = document.querySelectorAll('.minus');
-let plus = document.querySelectorAll('.plus');
+
+const items = Array.from(document.querySelectorAll('.goodContent'));
+
+
+// функция вычисления общей стоимости:
+
+const calcSum = () => {
+    const prices = Array.from(document.querySelectorAll('.price')).map(el => +el.textContent.slice(0,-2));
+    price.textContent = prices.reduce((sum, elem) => sum + elem, 0);
+
+}
+
+calcSum();
+
+// Функция пересчета стоимости товара при изменении кол-ва:
+
+const calcPrice = (card) => {
+    const index = items.indexOf(card);
+    card.querySelector('.priceDef').textContent = goods[index].price * card.querySelector('.countNum').textContent;
+}
+
 
 window.addEventListener('click', (event) =>{
-    console.log(event.target)
-    let count = event.target.closest('.count'); 
-    console.log(count)
-    let countNum = count.querySelector('.countNum')
-    console.log(countNum);
-    if(event.target == '<button class="minus">-</button>'){
-        countNum.innerText = Number(countNum.innerText) - 1
-    }else if(event.target == '<button class="plus">+</button>'){
-        countNum.innerText = Number(countNum.innerText) + 1
+
+    const tag = event.target;
+
+    if(tag.classList.contains('minus') && tag.nextElementSibling.textContent != 0){
+        tag.nextElementSibling.textContent--; // уменьшение кол-ва
+        calcPrice(tag.closest('.goodContent')) // пересчет стоимости товара
+        calcSum() // пересчет общей суммы
+    }
+    if(tag.classList.contains('plus')){
+        tag.previousElementSibling.textContent++;
+        calcPrice(tag.closest('.goodContent'))
+        calcSum()
     }
 })
+
+
+
+

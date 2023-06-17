@@ -21,6 +21,10 @@ header {
   margin: auto;
 }
 
+button{
+  cursor: pointer;
+}
+
 .topPartOfHeader {
   display: flex;
   justify-content: space-between;
@@ -287,4 +291,18 @@ footer .ourContacts .place, footer .ourContacts .number {
 }
 .goodImg{
   width: 20%;
+}
+
+.in-all{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.in-all span{
+  margin: 0 30px;
+}
+
+.price-all{
+  color: #000;
+  font-size: 26px;
 }

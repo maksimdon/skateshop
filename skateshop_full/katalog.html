@@ -22,7 +22,7 @@
       </div>
       <div class="navigator">
         <ul>
-          <li><a href="main.html">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="404.html">Доставка</a></li>
           <li><a href="404.html">Отзывы</a></li>
           <li><a href="404.html">Контакты</a></li>
@@ -55,13 +55,13 @@
         </div>
         <div class="price">
           <button>Цена</button>
-          <div class="listPoint">
+          <div class="listPoint price2">
             <ul>
-              <li>0-30 BYN</li>
-              <li>30-75 BYN</li>
-              <li>75-150 BYN</li>
-              <li>150-250 BYN</li>
-              <li>250-400 BYN</li>
+              <li data-id="0-30">0-30 BYN</li>
+              <li data-id="30-75">30-75 BYN</li>
+              <li data-id="75-150">75-150 BYN</li>
+              <li data-id="150-250">150-250 BYN</li>
+              <li data-id="250-400">250-400 BYN</li>
             </ul>
           </div>
         </div>
@@ -78,14 +78,14 @@
         </div>
         <div class="color">
           <button>Цвет</button>
-          <div class="listPoint">
+          <div class="listPoint colors">
             <ul>
-              <li>Чёрный</li>
-              <li>Белый</li>
-              <li>Синий</li>
-              <li>Желтый</li>
-              <li>Фиолетовый</li>
-              <li>Зеленый</li>
+              <li data-id="black">Чёрный</li>
+              <li data-id="white">Белый</li>
+              <li data-id="blue">Синий</li>
+              <li data-id="yellow">Желтый</li>
+              <li data-id="purple">Фиолетовый</li>
+              <li data-id="green">Зеленый</li>
             </ul>
           </div>
         </div>
@@ -95,36 +95,138 @@
   
   <div class="container">
     <div class="katalog">
+
+
       <div class="card shue black 150-250">
         <img src="images/VansOldSkool.jpg" alt="vans">
         <h2 class="tag">Кеды Vans “Old Skool</h2>
-        <p class="price">199.99</p>
+        <p class="price">199.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
       </div>
       <div class="card clothe black 150-250">
         <img src="images/TrusherSkategoat.jpg" alt="trusher">
         <h2 class="tag">Худи “Thrasher Skategoat”</h2>
-        <p class="price">175.00</p>
+        <p class="price">175.00 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
       </div>
       <div class="card parts 75-150">
         <img src="images/UnionComplect.jpg" alt="union">
         <h2 class="tag">Комплект “Юнион”</h2>
-        <p class="price">85.00</p>
+        <p class="price">85.00 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
       </div>
       <div class="card acsessuars 0-30">
         <img src="images/AsphaltMagazin.jpg" alt="asphalt">
         <h2 class="tag">Журнал “ACФАЛЬТ”</h2>
-        <p class="price">29.99</p>
+        <p class="price">29.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
       </div>
+
+
       <div class="card clothe blue 250-400">
         <img src="images/CarharttWIP.jpg" alt="carhartt">
         <h2 class="tag">Джинсы “Carhartt WIP””</h2>
-        <p class="price">359.99</p>
+        <p class="price">359.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
       </div>
       <div class="card shue black 75-150">
         <img src="images/ConverseChuckTaylor.jpg" alt="converse">
         <h2 class="tag">Кеды “Converse Chuck Taylor”</h2>
-        <p class="price">124.99</p>
+        <p class="price">124.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
       </div>
+      <div class="card parts 0-30">
+        <img src="images/ABEC-7.jpg" alt="ABEC-7">
+        <h2 class="tag">  Подшипники “ABEC-7” </h2>
+        <p class="price">19.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card parts purple 75-150">
+        <img src="images/Rectangle 19.png" alt="haunted family">
+        <h2 class="tag">Доска “Haunted Family”</h2>
+        <p class="price">79.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+
+
+      <div class="card clothe blue white 75-150">
+        <img src="images/Group 70.png" alt="nike SB">
+        <h2 class="tag"> Лонгслив “Nike SB”</h2>
+        <p class="price">149.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card acsessuars 0-30">
+        <img src="images/Rectangle 30.png" alt="thrasher skate mag">
+        <h2 class="tag">Журнал “Thrasher Skate Mag”</h2>
+        <p class="price">29.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card clothe blue white 250-400">
+        <img src="images/Rectangle 29.png" alt="stussy">
+        <h2 class="tag">Рубашка “Stussy”</h2>
+        <p class="price">399.00 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card ukrasheniya black 75-150">
+        <img src="images/Rectangle 31.png" alt="huf">
+        <h2 class="tag">Кепка “Huf”</h2>
+        <p class="price">89.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+
+
+      <div class="card clothe black 75-150">
+        <img src="images/Rectangle 64.png" alt="DC">
+        <h2 class="tag"> Лонгслив “DC”</h2>
+        <p class="price">99.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card parts 30-75">
+        <img src="images/Rectangle 65.png" alt="element">
+        <h2 class="tag">Траки “ELEMENT”</h2>
+        <p class="price">75.00 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card shue black 150-250">
+        <img src="images/Group 51.png" alt="RipnDip">
+        <h2 class="tag">Кеды "RipnDip"</h2>
+        <p class="price">249.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card clothe blue 75-150">
+        <img src="images/image 9.png" alt="QuickSilver">
+        <h2 class="tag">Джинсовка “QuickSilver"</h2>
+        <p class="price">149.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+
+
+      <div class="card shue green 250-400">
+        <img src="images/Rectangle 66.png" alt="Revenge x Storm">
+        <h2 class="tag">Кеды “Revenge x Storm"</h2>
+        <p class="price">359.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card acsessuars 30-75">
+        <img src="images/Rectangle 67.png" alt="Tony Hawk 3">
+        <h2 class="tag">Игра “Tony Hawk 3”</h2>
+        <p class="price">49.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card stickers 0-30">
+        <img src="images/Group 53.png" alt="stickers">
+        <h2 class="tag">Набор Стикеров</h2>
+        <p class="price">9.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+      <div class="card clothe yellow 75-150">
+        <img src="images/image 11.png" alt="stussy">
+        <h2 class="tag">Футболка “Stussy”</h2>
+        <p class="price">129.99 BYN</p>
+        <a class="buy" href="bucket.html">Купить</a>
+      </div>
+
+
     </div>
   </div>
   <footer>
